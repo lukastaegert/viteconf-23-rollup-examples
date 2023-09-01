@@ -1,14 +1,12 @@
 import { defineConfig } from "rollup";
-import clearDist from "./clear-dist.js";
 
+// This bundles to stdout
 export default defineConfig({
   input: "src/main.js",
   output: {
-    dir: "dist",
     assetFileNames: "[name][extname]",
   },
   plugins: [
-    clearDist(),
     {
       name: "emit-files",
       resolveId(source) {
@@ -25,7 +23,7 @@ export default defineConfig({
             // Change this line to see what happens
             needsCodeReference: true,
           });
-          return `export default import.meta.ROLLUP_FILE_URL_${referenceId}`;
+          return `export default import.meta.ROLLUP_FILE_URL_${referenceId};`;
         }
       },
     },

@@ -1,7 +1,7 @@
 {
-  "name": "1-tree-shake-emitted-assets",
+  "name": "7-experimental-min-chunk-size",
   "version": "1.0.0",
-  "description": "tree-shaking for emitted assets",
+  "description": "merge chunks with a minimum chunk size target",
   "scripts": {
     "build": "rollup -c"
   },

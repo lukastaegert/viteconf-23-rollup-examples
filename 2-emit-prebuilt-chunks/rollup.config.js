@@ -1,5 +1,4 @@
 import { defineConfig } from "rollup";
-import clearDist from "./clear-dist.js";
 
 export default defineConfig({
   input: "src/main.js",
@@ -8,7 +7,6 @@ export default defineConfig({
     assetFileNames: "[name][extname]",
   },
   plugins: [
-    clearDist(),
     {
       name: "emit-files",
       resolveId(source) {

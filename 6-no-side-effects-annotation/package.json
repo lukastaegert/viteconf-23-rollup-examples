@@ -1,7 +1,7 @@
 {
-  "name": "1-tree-shake-emitted-assets",
+  "name": "6-no-side-effects-annotation",
   "version": "1.0.0",
-  "description": "tree-shaking for emitted assets",
+  "description": "support __NO_SIDE_EFFECTS__ annotation for function declarations",
   "scripts": {
     "build": "rollup -c"
   },
