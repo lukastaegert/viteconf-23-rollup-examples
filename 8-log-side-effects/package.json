@@ -1,0 +1,16 @@
+{
+  "name": "8-manual-pure-functions",
+  "version": "1.0.0",
+  "description": "manually declare pure functions by name",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "Lukas Taegert-Atkinson",
+  "license": "Apache-2.0",
+  "type": "module",
+  "devDependencies": {
+    "del": "^7.1.0",
+    "prettier": "^3.0.3",
+    "rollup": "^3.28.1"
+  }
+}
